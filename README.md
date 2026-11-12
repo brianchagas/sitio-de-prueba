@@ -4,7 +4,7 @@ Sitio de ejemplo de tres páginas, utilizado para practicar vínculos, rutas rel
 
 ## Sitio publicado
 
-https://brianchagas.github.io/sitio-de-prueba/
+https://github.com/brianchagas/sitio-de-prueba
 
 ## Contenido
 
