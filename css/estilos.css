@@ -1,0 +1,48 @@
+/* Estilos de la demostración de vínculos y rutas */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.5;
+}
+
+header {
+  background-color: #1f4e79;
+  color: #ffffff;
+  padding: 16px;
+}
+
+header h1 {
+  margin: 0 0 8px 0;
+}
+
+nav a {
+  margin-right: 16px;
+}
+
+header nav a {
+  color: #ffffff;
+}
+
+main {
+  padding: 16px;
+  max-width: 800px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* PUNTO 13 (estados de los enlaces con pseudo-clases):
+   :hover  -> cuando el mouse pasa por encima
+   :focus  -> cuando el enlace se selecciona con la tecla Tab (importante para la accesibilidad) */
+a:hover {
+  text-decoration: none;
+  background-color: #fff3c4;
+  color: #1b1f2a;
+}
+
+a:focus {
+  outline: 3px solid #f3c14b;
+}

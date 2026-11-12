@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cada página tiene un título y una descripción propios. -->
+    <title>Cursos | Centro de formación</title>
+    <meta name="description" content="Cursos de programación, redes y bases de datos, con sus horarios.">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header id="arriba">
+        <h1>Cursos</h1>
+        <!-- Vínculos internos entre páginas: rutas RELATIVAS, escritas desde la ubicación de este archivo. -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cursos.html">Cursos</a>
+            <!-- contacto.html está dentro de la carpeta "paginas": la ruta incluye el nombre de la carpeta. -->
+            <a href="paginas/contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Índice de la página: cada enlace apunta al id de una sección (anclas). -->
+        <nav class="indice">
+            <h2>En esta página</h2>
+            <ul>
+                <li><a href="#programacion">Programación</a></li>
+                <li><a href="#redes">Redes</a></li>
+                <li><a href="#bases-de-datos">Bases de datos</a></li>
+                <li><a href="#horarios">Horarios</a></li>
+            </ul>
+        </nav>
+
+        <!-- Los id no llevan espacios ni tildes: se usan guiones. -->
+        <section id="programacion">
+            <h2>Programación</h2>
+            <p>Fundamentos de programación y desarrollo web.</p>
+        </section>
+
+        <section id="redes">
+            <h2>Redes</h2>
+            <p>Conceptos básicos de redes de computadoras.</p>
+        </section>
+
+        <section id="bases-de-datos">
+            <h2>Bases de datos</h2>
+            <p>Diseño y consulta de bases de datos relacionales.</p>
+        </section>
+
+        <!-- Esta sección es el destino del enlace "cursos.html#horarios" de la página de inicio. -->
+        <section id="horarios">
+            <h2>Horarios</h2>
+            <p>Turno matutino: de 8:00 a 11:00. Turno vespertino: de 14:00 a 17:00.</p>
+        </section>
+
+        <p><a href="#arriba">Volver arriba</a></p>
+    </main>
+</body>
+</html>

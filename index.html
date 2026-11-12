@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PUNTO 1 (SEO): el título se ve en la pestaña del navegador y en los resultados de los buscadores.
+         Debe ser breve y describir el contenido de ESTA página (cada página tiene su propio título). -->
+    <title>Centro de formación | Inicio</title>
+
+    <!-- PUNTO 2 (SEO): la meta description es el resumen que los buscadores suelen mostrar debajo del título. -->
+    <meta name="description" content="Centro de formación en informática: cursos de programación, redes y bases de datos.">
+
+    <!-- PUNTO 3 (ruta relativa): la hoja de estilos está en la carpeta "css", al mismo nivel que este archivo. -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <!-- El id "arriba" es el destino del enlace "Volver arriba" del final. -->
+    <header id="arriba">
+        <!-- PUNTO 4 (jerarquía de contenidos): un único h1 por página, con el tema principal. -->
+        <h1>Centro de formación</h1>
+
+        <!-- PUNTO 5 (vínculos entre páginas del sitio) -->
+        <!-- Vínculos internos entre páginas: rutas RELATIVAS, escritas desde la ubicación de este archivo. -->
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="cursos.html">Cursos</a>
+            <!-- contacto.html está dentro de la carpeta "paginas": la ruta incluye el nombre de la carpeta. -->
+            <a href="paginas/contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- PUNTO 6 (enlaces dentro de la misma página o anclas): href="#id" lleva al elemento que tiene ese id. -->
+        <p>Ir a: <a href="#presentacion">Presentación</a> · <a href="#novedades">Novedades</a></p>
+
+        <section id="presentacion">
+            <h2>Presentación</h2>
+
+            <!-- PUNTO 7 (imágenes): src con ruta relativa y alt que describe la imagen
+                 (lo leen los lectores de pantalla y los buscadores). -->
+            <img src="img/aula.svg" alt="Aula con computadoras del centro de formación">
+
+            <p>Ofrecemos cursos de informática para estudiantes y público en general.</p>
+
+            <!-- PUNTO 8 (enlace a una sección de OTRA página): nombre de la página + # + id de la sección. -->
+            <p>Consulte los <a href="cursos.html#horarios">horarios de los cursos</a>.</p>
+        </section>
+
+        <section id="novedades">
+            <h2>Novedades</h2>
+            <p>Se abren las inscripciones para el próximo período.</p>
+
+            <!-- PUNTO 9 (vínculo externo): dirección completa, con https://.
+                 target="_blank" abre una pestaña nueva y rel="noopener noreferrer" protege a esta página.
+                 El texto del enlace indica a dónde lleva (nunca "clic aquí"). -->
+            <p>Material de consulta: <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank" rel="noopener noreferrer">guía de HTML en MDN (se abre en otra pestaña)</a>.</p>
+        </section>
+
+        <!-- PUNTO 10: enlace para volver al comienzo de la página (apunta al id del header). -->
+        <p><a href="#arriba">Volver arriba</a></p>
+    </main>
+
+    <footer>
+        <p>Centro de formación</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Centro de formación</title>
+    <meta name="description" content="Datos de contacto del centro de formación: correo electrónico y teléfono.">
+
+    <!-- PUNTO 11 (subir de carpeta): este archivo está DENTRO de "paginas".
+         "../" significa "subir una carpeta"; desde allí se entra a "css". -->
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <!-- Para ir a index.html hay que subir una carpeta. -->
+            <a href="../index.html">Inicio</a>
+            <a href="../cursos.html">Cursos</a>
+            <!-- contacto.html está en la misma carpeta que este archivo: basta con su nombre. -->
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- La imagen también se busca subiendo una carpeta. -->
+        <img src="../img/aula.svg" alt="Aula con computadoras del centro de formación">
+
+        <!-- PUNTO 12 (otros tipos de vínculos):
+             mailto: abre el programa de correo con la dirección cargada.
+             tel: permite llamar al tocar el enlace desde un celular. -->
+        <p>Correo electrónico: <a href="mailto:consultas@centro.edu.uy">consultas@centro.edu.uy</a></p>
+        <p>Teléfono: <a href="tel:+59800000000">0000 0000</a></p>
+    </main>
+</body>
+</html>
